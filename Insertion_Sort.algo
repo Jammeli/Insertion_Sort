@@ -1,0 +1,13 @@
+ALGORITHM Insertion_Sort (n:INTEGER, Var Tab:ARRAY_OF_INTEGER)
+VAR
+i,j,v:INTEGER.
+BEGIN
+FOR i FROM 2 TO n DO
+v:=Tab[i];
+j:=i;
+While (Tab[j-1]>v) DO
+    Tab[j]:=Tab[j-1]; 
+    j:=j-1;
+END_WHILE
+    Tab[j]:=v;
+END_FOR
